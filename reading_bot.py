@@ -12,8 +12,9 @@ from os import listdir
 from os.path import isfile, join
 from aiogram import Bot, Dispatcher, executor, types
 from books_handler import tokenize_file_nltk
+import config
 
-API_TOKEN = '2129359041:AAFynOIElhDRGKo8-3FW6jFpv-Iv9RlDkFM'
+API_TOKEN = config.API_TOKEN
 DELAY_FOR_REMINDER_CHECK = 5
 DELAY_FOR_REMINDER = 5
 REMINDER_MESSAGES_NUMBER = 3
