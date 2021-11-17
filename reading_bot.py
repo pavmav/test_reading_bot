@@ -12,7 +12,7 @@ from os import listdir
 from os.path import isfile, join
 from aiogram import Bot, Dispatcher, executor, types
 from books_handler import tokenize_file_nltk
-import config
+#import config
 import os
 
 API_TOKEN = os.getenv('API_TOKEN', '') #config.API_TOKEN
