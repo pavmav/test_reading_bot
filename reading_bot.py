@@ -13,10 +13,11 @@ from os.path import isfile, join
 from aiogram import Bot, Dispatcher, executor, types
 from books_handler import tokenize_file_nltk
 import config
+import os
 
-API_TOKEN = config.API_TOKEN
-DELAY_FOR_REMINDER_CHECK = 5
-DELAY_FOR_REMINDER = 5
+API_TOKEN = os.getenv('API_TOKEN', '') #config.API_TOKEN
+DELAY_FOR_REMINDER_CHECK = 60
+DELAY_FOR_REMINDER = 65
 REMINDER_MESSAGES_NUMBER = 3
 
 # Configure logging
