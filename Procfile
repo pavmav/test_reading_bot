@@ -1,0 +1,1 @@
+bot: python3 reading_bot.py
