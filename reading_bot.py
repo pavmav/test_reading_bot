@@ -16,7 +16,7 @@ from books_handler import tokenize_file_nltk
 import os
 import nltk
 
-nltk.download()
+nltk.download('punkt')
 
 API_TOKEN = os.getenv('API_TOKEN', '') #config.API_TOKEN
 DELAY_FOR_REMINDER_CHECK = 60
