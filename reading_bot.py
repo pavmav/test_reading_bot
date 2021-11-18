@@ -14,6 +14,9 @@ from aiogram import Bot, Dispatcher, executor, types
 from books_handler import tokenize_file_nltk
 #import config
 import os
+import nltk
+
+nltk.download()
 
 API_TOKEN = os.getenv('API_TOKEN', '') #config.API_TOKEN
 DELAY_FOR_REMINDER_CHECK = 60
